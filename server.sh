@@ -1,14 +1,14 @@
 #!/bin/bash
 set -e
 
-BASE_DIR="/home/ubuntu/myproject"
-VENV_DIR="$BASE_DIR/venv/bin"
+BASE_DIR="/home/administrator/celery_server/celery_server"
+VENV_DIR="/home/administrator/celery_server/venv/bin"
 PROJECT_NAME="celery_server"
-PORT=1212
+PORT=1211
 
 LOG_DIR="$BASE_DIR/logs"
 
-DJANGO_LOG="$LOG_DIR/celery_django.log"
+GUNICORN_LOG="$LOG_DIR/gunicorn.log"
 CELERY_LOG="$LOG_DIR/celery_worker.log"
 BEAT_LOG="$LOG_DIR/celery_beat.log"
 
@@ -16,10 +16,15 @@ mkdir -p "$LOG_DIR"
 
 start_servers() {
 
-    echo "Starting Django server..."
+    echo "Starting Gunicorn..."
 
-    "$VENV_DIR/python" "$BASE_DIR/manage.py" runserver 0.0.0.0:$PORT \
-        > "$DJANGO_LOG" 2>&1 &
+    "$VENV_DIR/gunicorn" "$PROJECT_NAME.wsgi:application" \
+        --bind 0.0.0.0:$PORT \
+        --workers 2 \
+        --timeout 120 \
+        --log-level info \
+        --access-logfile "$GUNICORN_LOG" \
+        --error-logfile "$GUNICORN_LOG" &
 
     DJANGO_PID=$!
 
@@ -37,7 +42,7 @@ start_servers() {
 
     BEAT_PID=$!
 
-    echo $DJANGO_PID > "$BASE_DIR/django.pid"
+    echo $DJANGO_PID > "$BASE_DIR/gunicorn.pid"
     echo $CELERY_PID > "$BASE_DIR/celery.pid"
     echo $BEAT_PID > "$BASE_DIR/celerybeat.pid"
 
@@ -48,9 +53,9 @@ stop_servers() {
 
     echo "Stopping servers..."
 
-    if [ -f "$BASE_DIR/django.pid" ]; then
-        kill -9 $(cat "$BASE_DIR/django.pid") || true
-        rm "$BASE_DIR/django.pid"
+    if [ -f "$BASE_DIR/gunicorn.pid" ]; then
+        kill -9 $(cat "$BASE_DIR/gunicorn.pid") || true
+        rm "$BASE_DIR/gunicorn.pid"
     fi
 
     if [ -f "$BASE_DIR/celery.pid" ]; then
