@@ -3,6 +3,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
 from .utils import schedule_daily_task
+from .tasks import send_email_task
 
 # Create your views here.
 @csrf_exempt
@@ -40,6 +41,28 @@ def schedule_task_view(request):
             "task_name": task.name
         })
 
+    except Exception as e:
+        return JsonResponse({
+            "status": "error",
+            "message": str(e)
+        }, status=400)
+
+
+@csrf_exempt
+def send_email_view(request):
+    if request.method != "POST":
+        return JsonResponse({"error": "POST required"}, status=405)
+    
+    try:
+        data = json.loads(request.body)
+        to_email = data.get("to_email")
+        subject = data.get("subject")
+        html_content = data.get("html_content")
+        from_email = data.get("from_email")
+        email_password = data.get("email_password")
+        
+        send_email_task.delay(to_email, subject, html_content,
+                        from_email,email_password)
     except Exception as e:
         return JsonResponse({
             "status": "error",
