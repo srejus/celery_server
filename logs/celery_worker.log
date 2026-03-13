@@ -1,0 +1,597 @@
+ 
+ -------------- celery@Allesdigi v5.6.2 (recovery)
+--- ***** ----- 
+-- ******* ---- Linux-6.8.0-100-generic-x86_64-with-glibc2.39 2026-03-06 05:52:23
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         celery_server:0x7fdc7763f290
+- ** ---------- .> transport:   redis://127.0.0.1:6379/0
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 2 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . home.tasks.call_url_task
+
+[2026-03-06 05:52:24,150: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2026-03-06 05:52:24,184: INFO/MainProcess] mingle: searching for neighbors
+[2026-03-06 05:52:25,237: INFO/MainProcess] mingle: all alone
+[2026-03-06 05:52:25,282: INFO/MainProcess] celery@Allesdigi ready.
+[2026-03-07 04:00:00,280: INFO/MainProcess] Task celery.backend_cleanup[bfa5372f-5654-4c0e-9781-f2dde971b37c] received
+[2026-03-07 04:00:00,319: INFO/ForkPoolWorker-1] Task celery.backend_cleanup[bfa5372f-5654-4c0e-9781-f2dde971b37c] succeeded in 0.007098001078702509s: None
+[2026-03-07 05:20:00,098: INFO/MainProcess] Task home.tasks.call_url_task[bdca9029-432a-4ed6-8759-4a1fb9150e67] received
+[2026-03-07 05:20:01,133: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[bdca9029-432a-4ed6-8759-4a1fb9150e67] succeeded in 0.9974701158935204s: {'status_code': 200, 'response': '{"status": "ok"}'}
+[2026-03-07 05:25:00,045: INFO/MainProcess] Task home.tasks.call_url_task[25a7dbdf-d0d1-4fa6-8b98-7e21fa64a535] received
+[2026-03-07 05:25:00,789: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[25a7dbdf-d0d1-4fa6-8b98-7e21fa64a535] succeeded in 0.7278214080724865s: {'status_code': 200, 'response': '{"status": "ok"}'}
+[2026-03-07 05:33:00,035: INFO/MainProcess] Task home.tasks.call_url_task[02d67a23-52fc-48ba-affc-c0c21cd82330] received
+[2026-03-07 05:33:03,914: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[02d67a23-52fc-48ba-affc-c0c21cd82330] succeeded in 3.846537403995171s: {'status_code': 200, 'response': '{"status": "ok"}'}
+[2026-03-07 05:37:00,056: INFO/MainProcess] Task home.tasks.call_url_task[1f9d9224-59ff-48f8-848f-8ea6d72ef874] received
+[2026-03-07 05:37:01,649: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[1f9d9224-59ff-48f8-848f-8ea6d72ef874] succeeded in 1.5563874029321596s: {'status_code': 200, 'response': '{"status": "ok"}'}
+[2026-03-08 04:00:00,059: INFO/MainProcess] Task celery.backend_cleanup[4d78560b-07dc-499f-981f-94666fbd445b] received
+[2026-03-08 04:00:00,079: INFO/ForkPoolWorker-1] Task celery.backend_cleanup[4d78560b-07dc-499f-981f-94666fbd445b] succeeded in 0.007182842120528221s: None
+[2026-03-08 05:37:00,027: INFO/MainProcess] Task home.tasks.call_url_task[8fffab18-5a7c-4f05-b9d7-a3c002a341ae] received
+[2026-03-08 05:37:00,222: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[8fffab18-5a7c-4f05-b9d7-a3c002a341ae] succeeded in 0.1750300999265164s: {'status_code': 200, 'response': '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Server Error - DoLaundry</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/business/ORCA_card_logo_2.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-b'}
+[2026-03-09 04:00:00,081: INFO/MainProcess] Task celery.backend_cleanup[a9b4a673-c1e5-4cb1-8b7f-bad36d5fa53a] received
+[2026-03-09 04:00:00,137: INFO/ForkPoolWorker-1] Task celery.backend_cleanup[a9b4a673-c1e5-4cb1-8b7f-bad36d5fa53a] succeeded in 0.015575306955724955s: None
+[2026-03-09 05:37:00,027: INFO/MainProcess] Task home.tasks.call_url_task[c25d784d-d417-4800-b7c7-3acf90c45f0b] received
+[2026-03-09 05:37:00,220: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[c25d784d-d417-4800-b7c7-3acf90c45f0b] succeeded in 0.17814733483828604s: {'status_code': 200, 'response': '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Server Error - DoLaundry</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/business/ORCA_card_logo_2.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-b'}
+[2026-03-09 21:00:00,016: INFO/MainProcess] Task home.tasks.call_url_task[ca4a3342-dbbc-450c-a19a-f3e45119726f] received
+[2026-03-09 21:00:00,125: INFO/MainProcess] Task home.tasks.call_url_task[3408b1e0-d864-4544-ac7b-fa5784cf2299] received
+[2026-03-09 21:00:00,160: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[ca4a3342-dbbc-450c-a19a-f3e45119726f] retry: Retry in 6s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-09 21:00:22,111: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[3408b1e0-d864-4544-ac7b-fa5784cf2299] retry: Retry in 7s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-09 21:01:43,162: INFO/MainProcess] Task home.tasks.call_url_task[3408b1e0-d864-4544-ac7b-fa5784cf2299] received
+[2026-03-09 21:02:26,171: INFO/MainProcess] Task home.tasks.call_url_task[ca4a3342-dbbc-450c-a19a-f3e45119726f] received
+[2026-03-09 21:04:51,194: INFO/MainProcess] Task home.tasks.call_url_task[3408b1e0-d864-4544-ac7b-fa5784cf2299] received
+[2026-03-09 21:04:51,200: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[3408b1e0-d864-4544-ac7b-fa5784cf2299] retry: Retry in 312s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-09 21:05:31,226: INFO/MainProcess] Task home.tasks.call_url_task[ca4a3342-dbbc-450c-a19a-f3e45119726f] received
+[2026-03-09 21:05:31,241: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[ca4a3342-dbbc-450c-a19a-f3e45119726f] retry: Retry in 449s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-09 21:10:03,226: ERROR/ForkPoolWorker-1] Task home.tasks.call_url_task[3408b1e0-d864-4544-ac7b-fa5784cf2299] raised unexpected: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/usr/lib/python3.12/http/client.py", line 1351, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1111, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1055, in send
+    self.connect()
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='155.117.42.56', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/trace.py", line 479, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/trace.py", line 779, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/autoretry.py", line 60, in run
+    ret = task.retry(exc=exc, **retry_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/task.py", line 750, in retry
+    raise_with_context(exc)
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/autoretry.py", line 38, in run
+    return task._orig_run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/celery_server/home/tasks.py", line 27, in call_url_task
+    response = requests.get(url, headers=headers, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='155.117.42.56', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
+[2026-03-09 21:13:00,242: ERROR/ForkPoolWorker-1] Task home.tasks.call_url_task[ca4a3342-dbbc-450c-a19a-f3e45119726f] raised unexpected: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/usr/lib/python3.12/http/client.py", line 1351, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1111, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1055, in send
+    self.connect()
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='155.117.42.56', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/trace.py", line 479, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/trace.py", line 779, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/autoretry.py", line 60, in run
+    ret = task.retry(exc=exc, **retry_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/task.py", line 750, in retry
+    raise_with_context(exc)
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/autoretry.py", line 38, in run
+    return task._orig_run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/celery_server/home/tasks.py", line 27, in call_url_task
+    response = requests.get(url, headers=headers, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='155.117.42.56', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
+[2026-03-10 04:00:00,047: INFO/MainProcess] Task celery.backend_cleanup[caf1134c-3026-405d-ba85-73a38d19c730] received
+[2026-03-10 04:00:00,088: INFO/ForkPoolWorker-1] Task celery.backend_cleanup[caf1134c-3026-405d-ba85-73a38d19c730] succeeded in 0.014211808098480105s: None
+[2026-03-10 05:37:00,061: INFO/MainProcess] Task home.tasks.call_url_task[0e25bceb-2617-4e4a-a15a-2c32ea8a1c8a] received
+[2026-03-10 05:37:00,325: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[0e25bceb-2617-4e4a-a15a-2c32ea8a1c8a] succeeded in 0.22348889708518982s: {'status_code': 200, 'response': '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Server Error - DoLaundry</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/business/ORCA_card_logo_2.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-b'}
+[2026-03-10 21:00:00,066: INFO/MainProcess] Task home.tasks.call_url_task[d430690a-f66f-421c-a514-e102b11472dd] received
+[2026-03-10 21:00:00,174: INFO/MainProcess] Task home.tasks.call_url_task[d430690a-f66f-421c-a514-e102b11472dd] received
+[2026-03-10 21:00:00,234: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[d430690a-f66f-421c-a514-e102b11472dd] retry: Retry in 1s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-10 21:00:01,181: INFO/MainProcess] Task home.tasks.call_url_task[d430690a-f66f-421c-a514-e102b11472dd] received
+[2026-03-10 21:00:01,197: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[d430690a-f66f-421c-a514-e102b11472dd] retry: Retry in 32s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-10 21:00:09,231: INFO/MainProcess] Task home.tasks.call_url_task[85e54c09-8af8-40b5-8e37-588ae69a5981] received
+[2026-03-10 21:00:31,260: INFO/MainProcess] Task home.tasks.call_url_task[85e54c09-8af8-40b5-8e37-588ae69a5981] received
+[2026-03-10 21:00:31,269: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[85e54c09-8af8-40b5-8e37-588ae69a5981] retry: Retry in 58s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-10 21:00:33,210: INFO/MainProcess] Task home.tasks.call_url_task[d430690a-f66f-421c-a514-e102b11472dd] received
+[2026-03-10 21:00:33,226: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[d430690a-f66f-421c-a514-e102b11472dd] retry: Retry in 112s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-10 21:01:29,308: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[85e54c09-8af8-40b5-8e37-588ae69a5981] retry: Retry in 7s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-10 21:02:25,232: INFO/MainProcess] Task home.tasks.call_url_task[d430690a-f66f-421c-a514-e102b11472dd] received
+[2026-03-10 21:02:25,239: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[d430690a-f66f-421c-a514-e102b11472dd] retry: Retry in 220s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-10 21:06:05,322: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[d430690a-f66f-421c-a514-e102b11472dd] retry: Retry in 101s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-11 04:00:00,056: INFO/MainProcess] Task celery.backend_cleanup[2232241d-5460-4812-9820-3a8b4219d5a9] received
+[2026-03-11 04:00:00,084: INFO/ForkPoolWorker-1] Task celery.backend_cleanup[2232241d-5460-4812-9820-3a8b4219d5a9] succeeded in 0.013421124080196023s: None
+[2026-03-11 05:37:00,048: INFO/MainProcess] Task home.tasks.call_url_task[48885890-2c5a-4c5f-94c9-14f8179f8e65] received
+[2026-03-11 05:37:07,237: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[48885890-2c5a-4c5f-94c9-14f8179f8e65] succeeded in 7.142184141790494s: {'status_code': 200, 'response': '{"status": "ok"}'}
+[2026-03-11 09:00:00,039: INFO/MainProcess] Task home.tasks.call_url_task[cc99f7c9-3570-4f77-b6ff-e18d93da8fe6] received
+[2026-03-11 09:00:00,182: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[cc99f7c9-3570-4f77-b6ff-e18d93da8fe6] succeeded in 0.10675081401132047s: {'status_code': 404, 'response': '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>127.0.0.1 does not exist</p>
+'}
+[2026-03-11 21:00:00,069: INFO/MainProcess] Task home.tasks.call_url_task[da7a5b68-7b97-457b-a580-a239e1ceef7f] received
+[2026-03-11 21:00:00,223: INFO/MainProcess] Task home.tasks.call_url_task[da7a5b68-7b97-457b-a580-a239e1ceef7f] received
+[2026-03-11 21:00:00,230: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[da7a5b68-7b97-457b-a580-a239e1ceef7f] retry: Retry in 14s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-11 21:00:09,248: INFO/MainProcess] Task home.tasks.call_url_task[3d1286fa-ab39-4ab9-8847-6ba50a176052] received
+[2026-03-11 21:00:14,233: INFO/MainProcess] Task home.tasks.call_url_task[da7a5b68-7b97-457b-a580-a239e1ceef7f] received
+[2026-03-11 21:00:14,247: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[da7a5b68-7b97-457b-a580-a239e1ceef7f] retry: Retry in 55s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-11 21:00:17,295: INFO/MainProcess] Task home.tasks.call_url_task[3d1286fa-ab39-4ab9-8847-6ba50a176052] received
+[2026-03-11 21:00:17,321: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[3d1286fa-ab39-4ab9-8847-6ba50a176052] retry: Retry in 97s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-11 21:01:09,323: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[da7a5b68-7b97-457b-a580-a239e1ceef7f] retry: Retry in 69s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-11 21:01:54,334: INFO/MainProcess] Task home.tasks.call_url_task[3d1286fa-ab39-4ab9-8847-6ba50a176052] received
+[2026-03-11 21:01:54,349: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[3d1286fa-ab39-4ab9-8847-6ba50a176052] retry: Retry in 74s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-11 21:03:08,393: INFO/MainProcess] Task home.tasks.call_url_task[3d1286fa-ab39-4ab9-8847-6ba50a176052] received
+[2026-03-11 21:03:08,409: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[3d1286fa-ab39-4ab9-8847-6ba50a176052] retry: Retry in 224s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-11 21:06:52,419: ERROR/ForkPoolWorker-1] Task home.tasks.call_url_task[3d1286fa-ab39-4ab9-8847-6ba50a176052] raised unexpected: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/usr/lib/python3.12/http/client.py", line 1351, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1111, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1055, in send
+    self.connect()
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='155.117.42.56', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/trace.py", line 479, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/trace.py", line 779, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/autoretry.py", line 60, in run
+    ret = task.retry(exc=exc, **retry_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/task.py", line 750, in retry
+    raise_with_context(exc)
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/autoretry.py", line 38, in run
+    return task._orig_run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/celery_server/home/tasks.py", line 27, in call_url_task
+    response = requests.get(url, headers=headers, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='155.117.42.56', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
+[2026-03-12 04:00:00,103: INFO/MainProcess] Task celery.backend_cleanup[946c8b01-d028-4ec9-a6af-27b0a59338e1] received
+[2026-03-12 04:00:00,151: INFO/ForkPoolWorker-1] Task celery.backend_cleanup[946c8b01-d028-4ec9-a6af-27b0a59338e1] succeeded in 0.01741769607178867s: None
+[2026-03-12 05:37:00,051: INFO/MainProcess] Task home.tasks.call_url_task[84e35a60-a54c-4715-abcc-c518760fafe9] received
+[2026-03-12 05:37:00,437: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[84e35a60-a54c-4715-abcc-c518760fafe9] succeeded in 0.3553163830656558s: {'status_code': 200, 'response': '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Server Error - DoLaundry</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/business/ORCA_card_logo_2.svg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-b'}
+[2026-03-12 09:00:00,103: INFO/MainProcess] Task home.tasks.call_url_task[7c26e4de-26a1-4464-845c-9b6334857e8b] received
+[2026-03-12 09:00:00,238: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[7c26e4de-26a1-4464-845c-9b6334857e8b] succeeded in 0.06396908801980317s: {'status_code': 404, 'response': '<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>127.0.0.1 does not exist</p>
+'}
+[2026-03-12 21:00:00,052: INFO/MainProcess] Task home.tasks.call_url_task[1c966302-f3b5-46bb-8546-72358b718dfd] received
+[2026-03-12 21:00:00,170: INFO/MainProcess] Task home.tasks.call_url_task[1c966302-f3b5-46bb-8546-72358b718dfd] received
+[2026-03-12 21:00:00,186: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[1c966302-f3b5-46bb-8546-72358b718dfd] retry: Retry in 3s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-12 21:00:03,194: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[1c966302-f3b5-46bb-8546-72358b718dfd] retry: Retry in 54s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-12 21:00:25,146: INFO/MainProcess] Task home.tasks.call_url_task[7060bf8f-2901-4bba-a7e2-7cf0931207ab] received
+[2026-03-12 21:00:47,215: INFO/MainProcess] Task home.tasks.call_url_task[7060bf8f-2901-4bba-a7e2-7cf0931207ab] received
+[2026-03-12 21:00:47,226: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[7060bf8f-2901-4bba-a7e2-7cf0931207ab] retry: Retry in 98s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-12 21:00:57,252: INFO/MainProcess] Task home.tasks.call_url_task[1c966302-f3b5-46bb-8546-72358b718dfd] received
+[2026-03-12 21:01:00,077: INFO/MainProcess] Task home.tasks.call_url_task[bc2a6e67-76cf-41f3-a4c8-c2aab1b0277e] received
+[2026-03-12 21:01:00,485: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[bc2a6e67-76cf-41f3-a4c8-c2aab1b0277e] succeeded in 0.3901575079653412s: {'status_code': 200, 'response': '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Server Error - Resto Kitchens</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/business/restaurant-logo-design-template_79169-56.avif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+      '}
+[2026-03-12 21:01:28,298: INFO/MainProcess] Task home.tasks.call_url_task[1c966302-f3b5-46bb-8546-72358b718dfd] received
+[2026-03-12 21:01:28,300: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[1c966302-f3b5-46bb-8546-72358b718dfd] retry: Retry in 109s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-12 21:02:25,247: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[7060bf8f-2901-4bba-a7e2-7cf0931207ab] retry: Retry in 155s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-12 21:03:17,332: INFO/MainProcess] Task home.tasks.call_url_task[1c966302-f3b5-46bb-8546-72358b718dfd] received
+[2026-03-12 21:03:17,341: INFO/ForkPoolWorker-1] Task home.tasks.call_url_task[1c966302-f3b5-46bb-8546-72358b718dfd] retry: Retry in 256s: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+[2026-03-12 21:05:00,290: INFO/MainProcess] Task home.tasks.call_url_task[7060bf8f-2901-4bba-a7e2-7cf0931207ab] received
+[2026-03-12 21:07:33,355: ERROR/ForkPoolWorker-1] Task home.tasks.call_url_task[1c966302-f3b5-46bb-8546-72358b718dfd] raised unexpected: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/usr/lib/python3.12/http/client.py", line 1351, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1111, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1055, in send
+    self.connect()
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='155.117.42.56', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/trace.py", line 479, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/trace.py", line 779, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/autoretry.py", line 60, in run
+    ret = task.retry(exc=exc, **retry_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/task.py", line 750, in retry
+    raise_with_context(exc)
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/autoretry.py", line 38, in run
+    return task._orig_run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/celery_server/home/tasks.py", line 27, in call_url_task
+    response = requests.get(url, headers=headers, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='155.117.42.56', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
+[2026-03-12 21:11:51,302: ERROR/ForkPoolWorker-1] Task home.tasks.call_url_task[7060bf8f-2901-4bba-a7e2-7cf0931207ab] raised unexpected: ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'155.117.42.56\', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host=\'155.117.42.56\', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))'))
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/usr/lib/python3.12/http/client.py", line 1351, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1111, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1055, in send
+    self.connect()
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='155.117.42.56', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/trace.py", line 479, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/trace.py", line 779, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/autoretry.py", line 60, in run
+    ret = task.retry(exc=exc, **retry_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/task.py", line 750, in retry
+    raise_with_context(exc)
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/celery/app/autoretry.py", line 38, in run
+    return task._orig_run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/celery_server/home/tasks.py", line 27, in call_url_task
+    response = requests.get(url, headers=headers, timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/administrator/celery_server/venv/lib/python3.12/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='155.117.42.56', port=80): Max retries exceeded with url: /settings/send-report-api/ (Caused by NewConnectionError("HTTPConnection(host='155.117.42.56', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
+[2026-03-13 04:00:00,127: INFO/MainProcess] Task celery.backend_cleanup[d0c48f31-1e68-4d52-b5aa-7cb263d663d1] received
+[2026-03-13 04:00:00,182: INFO/ForkPoolWorker-1] Task celery.backend_cleanup[d0c48f31-1e68-4d52-b5aa-7cb263d663d1] succeeded in 0.015383230987936258s: None

@@ -1,0 +1,39 @@
+[2026-03-06 05:52:23,399: INFO/MainProcess] beat: Starting...
+[2026-03-06 05:52:28,765: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-06 05:52:48,838: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-07 04:00:00,042: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2026-03-07 05:06:52,977: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-07 05:07:33,155: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-07 05:07:38,238: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-07 05:18:25,513: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-07 05:20:00,033: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://77.93.152.241:9080/ (home.tasks.call_url_task)
+[2026-03-07 05:20:35,282: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-07 05:23:36,041: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-07 05:25:00,005: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://77.93.152.241:9080/ (home.tasks.call_url_task)
+[2026-03-07 05:31:41,664: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-07 05:33:00,006: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://77.93.152.241:9080/ (home.tasks.call_url_task)
+[2026-03-07 05:35:40,633: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-07 05:37:00,008: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://77.93.152.241:9080/ (home.tasks.call_url_task)
+[2026-03-08 04:00:00,006: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2026-03-08 05:37:00,003: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://77.93.152.241:9080/ (home.tasks.call_url_task)
+[2026-03-09 04:00:00,010: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2026-03-09 05:37:00,013: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://77.93.152.241:9080/ (home.tasks.call_url_task)
+[2026-03-09 09:33:23,203: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-09 21:00:00,002: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://155.117.42.56/ (home.tasks.call_url_task)
+[2026-03-10 04:00:00,008: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2026-03-10 05:37:00,013: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://77.93.152.241:9080/ (home.tasks.call_url_task)
+[2026-03-10 21:00:00,012: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://155.117.42.56/ (home.tasks.call_url_task)
+[2026-03-11 04:00:00,006: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2026-03-11 04:58:43,325: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-11 05:01:48,985: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-11 05:04:09,562: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-11 05:37:00,008: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://77.93.152.241:9080/ (home.tasks.call_url_task)
+[2026-03-11 09:00:00,040: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://127.0.0.1:8000/ (home.tasks.call_url_task)
+[2026-03-11 21:00:00,015: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://155.117.42.56/ (home.tasks.call_url_task)
+[2026-03-12 04:00:00,035: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2026-03-12 05:37:00,012: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://77.93.152.241:9080/ (home.tasks.call_url_task)
+[2026-03-12 06:59:42,830: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2026-03-12 09:00:00,013: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://127.0.0.1:8000/ (home.tasks.call_url_task)
+[2026-03-12 21:00:00,014: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://155.117.42.56/ (home.tasks.call_url_task)
+[2026-03-12 21:01:00,028: INFO/MainProcess] Scheduler: Sending due task daily_api_call_http://77.93.152.241:9050/ (home.tasks.call_url_task)
+[2026-03-13 04:00:00,034: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
