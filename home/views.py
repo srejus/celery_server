@@ -68,3 +68,5 @@ def send_email_view(request):
             "status": "error",
             "message": str(e)
         }, status=400)
+
+    return JsonResponse({"status":"ok"})
