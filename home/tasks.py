@@ -4,6 +4,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import logging
+from .models import EmailLog
 
 from celery import shared_task
 
@@ -58,5 +59,7 @@ def send_email_task(self,to_email, subject, html_content,
             server.login(from_email, email_password)
             server.sendmail(from_email, to_email, msg.as_string())
         logger.info("Email sent successfully!")
+        EmailLog.objects.create(from_email=from_email,to_email=to_email,subject=subject,data="Email Sent Successfully")
     except Exception as e:
         logger.error(f"Error sending email: {e}")
+        EmailLog.objects.create(from_email=from_email,to_email=to_email,subject=subject,data=f"Error sending email: {e}")
